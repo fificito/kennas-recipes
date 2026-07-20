@@ -4,82 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenna's Recipes</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: sans-serif;
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #fdfdfd;
-        }
-        .header {
-            margin-bottom: 50px;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #333;
-            margin: 0;
-        }
-        .subtitle {
-            font-size: 1.5rem;
-            color: #666;
-            margin: 10px 0 0 0;
-        }
-        .categories-container {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            width: 100%;
-            max-width: 600px;
-        }
-        .category-section {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            text-align: left;
-        }
-        .category-title {
-            font-size: 1.8rem;
-            color: #2c3e50;
-            margin-top: 0;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 10px;
-        }
-        .recipe-list {
-            list-style: none;
-            padding: 0;
-            margin: 15px 0 0 0;
-        }
-        .recipe-link {
-            display: block;
-            padding: 8px 0;
-            color: #3498db;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
-        .recipe-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Kenna's recipes</h1>
-        <p class="subtitle">These are the recipes I use</p>
-    </div>
-
-    <div class="categories-container">
-        <div class="category-section">
-            <h2 class="category-title">Main Course</h2>
-            <ul class="recipe-list">
-                <li><a href="recipes/quiche-lorraine.html" class="recipe-link">Quiche Lorraine</a></li>
-            </ul>
-        </div>
+    <div class="container">
+        <header>
+            <h1>Kenna's recipes</h1>
+            <p class="subtitle">These are the recipes I use</p>
+        </header>
+        <main id="recipe-directory">
+            <!-- Recipe categories and links will be added here by the kenna-recipe-manager -->
+            <p class="placeholder">No recipes added yet. Use the recipe manager to start adding your favorite dishes!</p>
+        </main>
     </div>
 </body>
 </html>
